@@ -32,3 +32,9 @@ SELECT ROUND(
 SUM(Revenue) / COUNT(DISTINCT InvoiceNo),2
 ) AS Avg_Order_Value
 FROM ecommerce_data;
+
+SELECT Month,
+ROUND(SUM(Revenue),2) AS Revenue
+FROM ecommerce_data
+GROUP BY Month
+ORDER BY Month;

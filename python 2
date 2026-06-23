@@ -4,3 +4,4 @@ df['Country'] = df['Country'].str.title()
 df = df[df['Description'].notna()]
 df['Year'] = df['InvoiceDate'].dt.year
 df['Quarter'] = df['InvoiceDate'].dt.quarter
+df['DayName'] = df['InvoiceDate'].dt.day_name()

@@ -2,3 +2,4 @@ LECT COUNT(*) FROM ecommerce_data;
 SELECT COUNT(DISTINCT CustomerID) FROM ecommerce_data;
 SELECT COUNT(DISTINCT Description) FROM ecommerce_data;
 SELECT COUNT(DISTINCT Country) FROM ecommerce_data;
+SELECT MAX(Revenue) FROM ecommerce_data;

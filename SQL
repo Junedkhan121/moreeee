@@ -38,3 +38,9 @@ ROUND(SUM(Revenue),2) AS Revenue
 FROM ecommerce_data
 GROUP BY Month
 ORDER BY Month;
+
+SELECT CustomerID,
+COUNT(DISTINCT InvoiceNo) AS Order_Count
+FROM ecommerce_data
+GROUP BY CustomerID
+HAVING COUNT(DISTINCT InvoiceNo) > 1;

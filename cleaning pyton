@@ -1,3 +1,7 @@
 1. Check Dataset Shape
 
 df.shape
+
+2. Check Missing Values
+
+df.isnull().sum()

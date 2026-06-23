@@ -33,3 +33,7 @@ df['Month'] = df['InvoiceDate'].dt.month
 9. Remove Negative Quantities
 
 df = df[df['Quantity'] > 0]
+
+10. Remove Negative Unit Prices
+
+df = df[df['UnitPrice'] > 0]

@@ -1,2 +1,3 @@
 LECT COUNT(*) FROM ecommerce_data;
 SELECT COUNT(DISTINCT CustomerID) FROM ecommerce_data;
+SELECT COUNT(DISTINCT Description) FROM ecommerce_data;

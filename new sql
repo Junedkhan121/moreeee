@@ -15,3 +15,7 @@ FROM ecommerce_data
 GROUP BY Description
 ORDER BY Qty_Sold DESC
 LIMIT 5;
+SELECT Month, COUNT(DISTINCT InvoiceNo) AS Orders
+FROM ecommerce_data
+GROUP BY Month
+ORDER BY Month;

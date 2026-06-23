@@ -10,3 +10,8 @@ FROM ecommerce_data
 GROUP BY Country
 ORDER BY Orders DESC
 LIMIT 5;
+SELECT Description, SUM(Quantity) AS Qty_Sold
+FROM ecommerce_data
+GROUP BY Description
+ORDER BY Qty_Sold DESC
+LIMIT 5;

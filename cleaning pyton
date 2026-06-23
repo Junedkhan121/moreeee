@@ -21,3 +21,7 @@ df = df.dropna(subset=['CustomerID'])
 6. Convert InvoiceDate to Datetime
 
 df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+
+7. Create Revenue Column
+
+df['Revenue'] = df['Quantity'] * df['UnitPrice']

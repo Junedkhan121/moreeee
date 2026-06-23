@@ -20,3 +20,10 @@ FROM ecommerce_data
 GROUP BY Description
 ORDER BY Total_Revenue DESC
 LIMIT 10;
+
+SELECT Country,
+ROUND(SUM(Revenue),2) AS Total_Revenue
+FROM ecommerce_data
+GROUP BY Country
+ORDER BY Total_Revenue DESC
+LIMIT 10;

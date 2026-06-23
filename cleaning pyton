@@ -17,3 +17,7 @@ df = df[~df['InvoiceNo'].astype(str).str.startswith('C')]
 5. Remove Missing Customer IDs
 
 df = df.dropna(subset=['CustomerID'])
+
+6. Convert InvoiceDate to Datetime
+
+df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])

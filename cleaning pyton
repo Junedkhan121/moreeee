@@ -5,3 +5,7 @@ df.shape
 2. Check Missing Values
 
 df.isnull().sum()
+
+3. Remove Duplicate Rows
+
+df = df.drop_duplicates()

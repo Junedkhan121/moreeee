@@ -6,3 +6,10 @@ FROM ecommerce_data;
 
 SELECT COUNT(DISTINCT CustomerID) AS Total_Customers
 FROM ecommerce_data;
+
+SELECT CustomerID,
+ROUND(SUM(Revenue),2) AS Total_Revenue
+FROM ecommerce_data
+GROUP BY CustomerID
+ORDER BY Total_Revenue DESC
+LIMIT 10;

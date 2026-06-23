@@ -1,4 +1,4 @@
-LECT COUNT(*) FROM ecommerce_data;
+SLECT COUNT(*) FROM ecommerce_data;
 SELECT COUNT(DISTINCT CustomerID) FROM ecommerce_data;
 SELECT COUNT(DISTINCT Description) FROM ecommerce_data;
 SELECT COUNT(DISTINCT Country) FROM ecommerce_data;

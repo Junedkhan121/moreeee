@@ -5,3 +5,8 @@ SELECT COUNT(DISTINCT Country) FROM ecommerce_data;
 SELECT MAX(Revenue) FROM ecommerce_data;
 SELECT MIN(Revenue) FROM ecommerce_data;
 SELECT ROUND(AVG(UnitPrice),2) FROM ecommerce_data;
+SELECT Country, COUNT(DISTINCT InvoiceNo) AS Orders
+FROM ecommerce_data
+GROUP BY Country
+ORDER BY Orders DESC
+LIMIT 5;

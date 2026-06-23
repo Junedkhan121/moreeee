@@ -6,3 +6,4 @@ df['Year'] = df['InvoiceDate'].dt.year
 df['Quarter'] = df['InvoiceDate'].dt.quarter
 df['DayName'] = df['InvoiceDate'].dt.day_name()
 df = df[df['Quantity'] < df['Quantity'].quantile(0.99)]
+df = df[df['Revenue'] < df['Revenue'].quantile(0.99)]

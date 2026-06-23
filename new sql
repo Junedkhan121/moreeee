@@ -19,3 +19,4 @@ SELECT Month, COUNT(DISTINCT InvoiceNo) AS Orders
 FROM ecommerce_data
 GROUP BY Month
 ORDER BY Month;
+done

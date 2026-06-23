@@ -44,3 +44,9 @@ COUNT(DISTINCT InvoiceNo) AS Order_Count
 FROM ecommerce_data
 GROUP BY CustomerID
 HAVING COUNT(DISTINCT InvoiceNo) > 1;
+
+SELECT Quarter,
+ROUND(SUM(Revenue),2) AS Revenue
+FROM ecommerce_data
+GROUP BY Quarter
+ORDER BY Quarter;

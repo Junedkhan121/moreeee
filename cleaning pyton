@@ -29,3 +29,7 @@ df['Revenue'] = df['Quantity'] * df['UnitPrice']
 8. Extract Month from InvoiceDate
 
 df['Month'] = df['InvoiceDate'].dt.month
+
+9. Remove Negative Quantities
+
+df = df[df['Quantity'] > 0]

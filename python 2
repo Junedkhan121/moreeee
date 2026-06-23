@@ -7,3 +7,4 @@ df['Quarter'] = df['InvoiceDate'].dt.quarter
 df['DayName'] = df['InvoiceDate'].dt.day_name()
 df = df[df['Quantity'] < df['Quantity'].quantile(0.99)]
 df = df[df['Revenue'] < df['Revenue'].quantile(0.99)]
+df.to_csv('cleaned_ecommerce_data.csv', index=False)

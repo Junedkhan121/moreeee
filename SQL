@@ -1,2 +1,5 @@
 SELECT ROUND(SUM(Revenue),2) AS Total_Revenue
 FROM ecommerce_data; 
+
+SELECT COUNT(DISTINCT InvoiceNo) AS Total_Orders
+FROM ecommerce_data;

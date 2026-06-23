@@ -3,3 +3,6 @@ FROM ecommerce_data;
 
 SELECT COUNT(DISTINCT InvoiceNo) AS Total_Orders
 FROM ecommerce_data;
+
+SELECT COUNT(DISTINCT CustomerID) AS Total_Customers
+FROM ecommerce_data;

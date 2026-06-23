@@ -13,3 +13,7 @@ df = df.drop_duplicates()
 4. Remove Cancelled Orders
 
 df = df[~df['InvoiceNo'].astype(str).str.startswith('C')]
+
+5. Remove Missing Customer IDs
+
+df = df.dropna(subset=['CustomerID'])

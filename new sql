@@ -1,1 +1,1 @@
-
+LECT COUNT(*) FROM ecommerce_data;

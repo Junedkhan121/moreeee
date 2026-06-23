@@ -25,3 +25,7 @@ df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
 7. Create Revenue Column
 
 df['Revenue'] = df['Quantity'] * df['UnitPrice']
+
+8. Extract Month from InvoiceDate
+
+df['Month'] = df['InvoiceDate'].dt.month
